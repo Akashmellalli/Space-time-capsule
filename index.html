@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Space Time Capsule | Abandoned but Not Forgotten</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body>
+<header><a class="brand" href="#home"><i>✦</i> SPACE TIME <b>CAPSULE</b></a><button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<nav id="mainNav"><a href="#explore">Explore equipment</a><a href="#timeline">Mission timeline</a><a href="#learn">Learn</a><a href="#quiz">Quiz</a></nav>
+<button id="savedNav" class="saved">♡ <span>My discoveries</span></button></header>
+<main id="home">
+<section class="hero"><div class="hero-bg"></div><div class="hero-overlay"></div><div class="hero-content">
+<div class="crumb">HOME　›　SPACE LEGACY</div><div class="eyebrow">THE STORIES BEHIND THE MACHINES</div>
+<h1>ABANDONED BUT<br><em>NOT FORGOTTEN</em></h1>
+<p>Across the Moon and Mars, machines carried humanity's curiosity into the unknown. Their missions may have ended, but their discoveries—and their stories—live on.</p>
+<a class="red-btn" href="#explore">EXPLORE THE ARCHIVE　↗</a><a class="ghost-btn" href="#about">WHY THEY MATTER</a>
+<div class="hero-foot">A HUMAN LEGACY BEYOND EARTH</div></div><div class="side-label">MOON　•　MARS　•　BEYOND</div></section>
+<section class="intro wrap" id="about"><div class="eyebrow">MISSION OVERVIEW</div><div class="intro-grid"><h2>Every machine has<br>a <em>mission to tell.</em></h2><div><p>Since the beginning of the Space Age, spacecraft, landers, rovers and scientific instruments have explored worlds beyond Earth. Some stopped working. Some were deliberately left behind. A few still contribute to science.</p><p>This archive introduces young space enthusiasts to the machines, the missions they supported, and the science they made possible—in clear, student-friendly language.</p></div></div>
+<div class="stats"><div><b>02</b><span>WORLDS EXPLORED</span></div><div><b>09+</b><span>HISTORIC OBJECTS</span></div><div><b>60+</b><span>YEARS OF EXPLORATION</span></div><div><b>∞</b><span>DISCOVERIES TO INSPIRE</span></div></div></section>
+<section class="archive" id="explore"><div class="wrap"><div class="eyebrow">THE EQUIPMENT ARCHIVE</div><div class="section-head"><div><h2>Explore the <em>missions.</em></h2><p>Meet the hardware that helped us understand other worlds.</p></div><div class="tabs"><button class="active" data-world="all">ALL</button><button data-world="Moon">THE MOON</button><button data-world="Mars">MARS</button></div></div>
+<label class="search">⌕ <input id="searchInput" placeholder="Search equipment, mission or destination..."></label><div id="equipmentGrid" class="grid"></div></div></section>
+<section class="feature"><div class="feature-img"></div><div class="feature-copy"><div class="eyebrow">BEYOND THE PHOTOGRAPH</div><h2>Discover the science<br>behind the <em>story.</em></h2><p>Explore what each machine was built to do, the discoveries it made, and what happened when its mission came to an end.</p><a class="red-btn" href="#explore">MEET THE EXPLORERS　↗</a></div></section>
+<section class="wrap timeline-section" id="timeline"><div class="eyebrow">A HISTORY OF EXPLORATION</div><div class="section-head"><h2>Milestones across<br><em>two worlds.</em></h2><p>From the first human lunar landing to robotic journeys across Mars.</p></div><div id="timelineList" class="timeline"></div></section>
+<section class="archive" id="learn"><div class="wrap"><div class="eyebrow">SPACE SCIENCE, SIMPLIFIED</div><h2>Explore the <em>ideas.</em></h2><p>Quick explanations to make space technology easier to understand.</p><div id="glossaryGrid" class="glossary"></div></div></section>
+<section class="quiz" id="quiz"><div class="wrap quiz-grid"><div><div class="eyebrow">STUDENT CHALLENGE</div><h2>Ready for your<br><em>mission briefing?</em></h2><p>Test what you have learned about the machines that explored the Moon and Mars.</p><div id="quizArea"><button class="red-btn" id="startQuiz">START THE QUIZ　↗</button></div></div><div class="quiz-art"><span>KNOWLEDGE<br>CHECK</span></div></div></section>
+</main><footer><div class="wrap foot-top"><a class="brand" href="#home">✦ SPACE TIME <b>CAPSULE</b></a><p>Abandoned but not forgotten. Their missions ended; their discoveries live on.</p></div><section class="wrap credits" aria-labelledby="creditsTitle"><h2 id="creditsTitle">IMAGE AND INFORMATION CREDITS</h2><p>NASA · NASA/JPL-Caltech · NASA Image and Video Library</p><p>This is an independent educational project developed for the NASA Space Apps Challenge. It is not affiliated with, sponsored by, or endorsed by NASA.</p></section><div class="wrap foot-bottom">STUDENT EDUCATIONAL PROJECT · NASA SPACE APPS CHALLENGE <span>NASA is not affiliated with or endorsing this project.</span></div></footer>
+<div id="modalBackdrop" class="backdrop" aria-hidden="true"><article class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button id="modalClose" class="close" aria-label="Close equipment profile">×</button><div id="modalContent"></div></article></div><div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script></body></html>
